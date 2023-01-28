@@ -1,13 +1,13 @@
+import { Assignments } from './Fundamentals/Assignments/Assignments';
+import { Basics } from './Fundamentals/Basics/Basics';
+
 function App() {
-  const n = 9999;
-  const arry = [];
-
-  for (let i = 1; i <= n; i++) {
-    // console.log(i);
-    arry.push(i + ', ');
-  }
-
-  return <div>TEST {arry}</div>;
+  return (
+    <div>
+      <Basics />
+      <Assignments />
+    </div>
+  );
 }
 
 export default App;
