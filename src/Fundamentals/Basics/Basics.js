@@ -41,18 +41,18 @@ export const Basics = () => {
   let John_height = 1.76;
 
   const BMI = (w, h) => {
-    return w / h ** 2;
+    return Math.round((w / h ** 2) * 100) / 100;
   };
   let Mark_BMI = BMI(Mark_weight, Mark_height);
   let John_BMI = BMI(John_weight, John_height);
 
   console.log(
-    Mark_BMI > John_BMI === true
-      ? `Mark has higher BMI ${Mark_BMI}`
-      : `John has higher BMI ${John_BMI}`
+    Mark_BMI > John_BMI
+      ? `Mark has higher BMI ${Mark_BMI} than John ${John_BMI}`
+      : `John has higher BMI ${John_BMI} than Mark ${Mark_BMI}`
   );
-
   //----------------------------------------------
+
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
