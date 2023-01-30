@@ -52,8 +52,43 @@ export const Basics = () => {
       : `John has higher BMI ${John_BMI} than Mark ${Mark_BMI}`
   );
   //----------------------------------------------
+  let a_true = true;
+  let b_false = false;
 
+  console.log('---AND---');
+  console.log(a_true && b_false);
+  console.log(a_true && a_true);
+  console.log(b_false && b_false);
+  console.log('---OR---');
+  console.log(a_true || b_false);
+  console.log(a_true || a_true);
+  console.log(b_false || b_false);
   //----------------------------------------------
+  // const teamA = [96, 108, 89];
+  // const teamA = [97, 112, 101];
+  const teamA = [97, 112, 101];
+  // const teamB = [88, 91, 110];
+  // const teamB = [109, 95, 123];
+  const teamB = [109, 95, 106];
+
+  const scoreA = Math.round(teamA.reduce((a, b) => a + b, 0) / teamA.length);
+  const scoreB = Math.round(teamB.reduce((a, b) => a + b, 0) / teamB.length);
+
+  if (scoreA > scoreB && scoreA >= 100) {
+    console.log(
+      `Winner is team A with score ${scoreA}. Team B scored ${scoreB}`
+    );
+  } else if (scoreA < scoreB && scoreB >= 100) {
+    console.log(
+      `Winner is team B with score ${scoreB}. Team A scored ${scoreA}`
+    );
+  } else if (scoreA === scoreB && scoreA >= 100 && scoreB >= 100) {
+    console.log(
+      `Score is draw. Team A scored: ${scoreA}. Team B scored ${scoreB}`
+    );
+  } else {
+    console.log('Noone scored more than 100 pts.');
+  }
   //----------------------------------------------
   //----------------------------------------------
   return <div>Basics</div>;

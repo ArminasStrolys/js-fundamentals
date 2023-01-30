@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Basics />
-      <Assignments />
+      {/* <Assignments /> */}
     </div>
   );
 }
