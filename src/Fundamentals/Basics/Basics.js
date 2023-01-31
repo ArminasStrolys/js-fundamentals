@@ -90,9 +90,51 @@ export const Basics = () => {
   //   console.log('Noone scored more than 100 pts.');
   // }
   //----------------------------------------------
+  // const day = 'friday';
 
+  // switch (day) {
+  //   case 'monday':
+  //     console.log('First day');
+  //     break;
+  //   case 'tuesday':
+  //   case 'wednesday':
+  //   case 'thursday':
+  //   case 'friday':
+  //     console.log('Work day');
+  //     break;
+  //   case 'saturday':
+  //   case 'sunday':
+  //     console.log('Weekend');
+  //     break;
+  //   default:
+  //     console.log('No such day');
+  // }
   //----------------------------------------------
+  // const tip1 = 15;
+  // const tip2 = 20;
+  // const bill = 430;
+
+  // bill > 50 && bill < 300
+  //   ? console.log('bill ' + bill, '% ' + tip1, 'tip: ' + (bill * tip1) / 100)
+  //   : console.log('bill ' + bill, '% ' + tip2, 'tip: ' + (bill * tip2) / 100);
   //----------------------------------------------
+  // const calcAvg = (a, b, c) => (a + b + c) / 3;
+  // const checkWinner = (team1, team2) => {
+  //   if (team1 / 2 >= team2) {
+  //     return console.log(`Team 1 wins with score ${team1} to ${team2}`);
+  //   } else if (team2 / 2 >= team1) {
+  //     return console.log(`Team 2 wins with score ${team2} to ${team1}`);
+  //   }
+  //   return console.log('Noone wins');
+  // };
+
+  // const team1 = Math.round(calcAvg(44, 23, 71));
+  // const team2 = Math.round(calcAvg(65, 54, 49));
+  // const team3 = Math.round(calcAvg(85, 54, 41));
+  // const team4 = Math.round(calcAvg(23, 34, 27));
+
+  // checkWinner(team1, team2);
+  // checkWinner(team3, team4);
   //----------------------------------------------
   //----------------------------------------------
   return <div>Basics</div>;
