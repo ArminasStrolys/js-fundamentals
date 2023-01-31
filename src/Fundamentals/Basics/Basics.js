@@ -136,6 +136,40 @@ export const Basics = () => {
   // checkWinner(team1, team2);
   // checkWinner(team3, team4);
   //----------------------------------------------
+  // const calcAge = (year) => 2050 - year;
+  // const yearArry = [1990, 1967, 2002, 2010, 2018];
+
+  // const empty = [];
+
+  // yearArry.forEach((el) => {
+  //   empty.push(calcAge(el));
+  // });
+
+  // console.log(empty);
+  //----------------------------------------------
+  // const tip15 = 0.15;
+  // const tip20 = 0.2;
+
+  // const bill = [125, 555, 44];
+  // const billTotal = [];
+
+  // const calcTip = (billArray) => {
+  //   billArray.forEach((el) => {
+  //     if (el >= 50 && el <= 300) {
+  //       billTotal.push(el * tip15 + el);
+  //       console.log(el * tip15);
+  //     } else {
+  //       billTotal.push(el * tip20 + el);
+  //       console.log(el * tip20);
+  //     }
+  //   });
+  // };
+
+  // calcTip(bill);
+  // console.log(billTotal);
+  //----------------------------------------------
+  //----------------------------------------------
+  //----------------------------------------------
   //----------------------------------------------
   return <div>Basics</div>;
 };
