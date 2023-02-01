@@ -168,7 +168,63 @@ export const Basics = () => {
   // calcTip(bill);
   // console.log(billTotal);
   //----------------------------------------------
+  // const jonas = {
+  //   firstName: 'Jonas',
+  //   lastName: 'Shmidt',
+  //   birthYear: 1990,
+  //   job: 'teacher',
+  //   skills: ['HTML', 'CSS', 'JS'],
+  //   hasDriversLicence: true,
+  //   calcAge: function () {
+  //     return (this.age = 2040 - this.birthYear);
+  //   },
+  //   hasSummary: function () {
+  //     return (this.summary = `${
+  //       this.firstName
+  //     } is a ${this.calcAge()}-year old ${this.job}, and he ${
+  //       this.hasDriversLicence ? 'has a' : 'does not have'
+  //     } drivers licence.`);
+  //   },
+  // };
+
+  // console.log(jonas.calcAge());
+  // console.log(jonas.hasSummary());
+  // console.log(jonas.age);
   //----------------------------------------------
+  const person1 = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    bmiCalc: function () {
+      return (this.bmi = this.mass / this.height ** 2);
+    },
+  };
+
+  const person2 = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    bmiCalc: function () {
+      return (this.bmi = this.mass / this.height ** 2);
+    },
+  };
+  person1.bmiCalc();
+  person2.bmiCalc();
+
+  console.log(
+    `${person1.fullName} weighs ${person1.mass} kg, his height is ${
+      person1.height
+    } cm. ${
+      person1.bmi > person2.bmi
+        ? `${person1.fullName} has higher BMI (${Math.round(
+            person1.bmi
+          )}) than ${person2.fullName} (${Math.round(person2.bmi)})`
+        : `${person2.fullName} has higher BMI (${Math.round(
+            person2.bmi
+          )}) than ${person1.fullName} (${Math.round(person1.bmi)})`
+    }`
+  );
+  // console.log(person1.bmi);
   //----------------------------------------------
   //----------------------------------------------
   return <div>Basics</div>;
