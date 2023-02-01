@@ -187,44 +187,79 @@ export const Basics = () => {
   //   },
   // };
 
-  // console.log(jonas.calcAge());
-  // console.log(jonas.hasSummary());
+  // jonas.calcAge()
+  // jonas.hasSummary()
   // console.log(jonas.age);
   //----------------------------------------------
-  const person1 = {
-    fullName: 'Mark Miller',
-    mass: 78,
-    height: 1.69,
-    bmiCalc: function () {
-      return (this.bmi = this.mass / this.height ** 2);
-    },
-  };
+  // const person1 = {
+  //   fullName: 'Mark Miller',
+  //   mass: 78,
+  //   height: 1.69,
+  //   bmiCalc: function () {
+  //     return (this.bmi = this.mass / this.height ** 2);
+  //   },
+  // };
 
-  const person2 = {
-    fullName: 'John Smith',
-    mass: 92,
-    height: 1.95,
-    bmiCalc: function () {
-      return (this.bmi = this.mass / this.height ** 2);
-    },
-  };
-  person1.bmiCalc();
-  person2.bmiCalc();
+  // const person2 = {
+  //   fullName: 'John Smith',
+  //   mass: 92,
+  //   height: 1.95,
+  //   bmiCalc: function () {
+  //     return (this.bmi = this.mass / this.height ** 2);
+  //   },
+  // };
+  // person1.bmiCalc();
+  // person2.bmiCalc();
 
-  console.log(
-    `${person1.fullName} weighs ${person1.mass} kg, his height is ${
-      person1.height
-    } cm. ${
-      person1.bmi > person2.bmi
-        ? `${person1.fullName} has higher BMI (${Math.round(
-            person1.bmi
-          )}) than ${person2.fullName} (${Math.round(person2.bmi)})`
-        : `${person2.fullName} has higher BMI (${Math.round(
-            person2.bmi
-          )}) than ${person1.fullName} (${Math.round(person1.bmi)})`
-    }`
-  );
+  // console.log(
+  //   `${person1.fullName} weighs ${person1.mass} kg, his height is ${
+  //     person1.height
+  //   } cm. ${
+  //     person1.bmi > person2.bmi
+  //       ? `${person1.fullName} has higher BMI (${Math.round(
+  //           person1.bmi
+  //         )}) than ${person2.fullName} (${Math.round(person2.bmi)})`
+  //       : `${person2.fullName} has higher BMI (${Math.round(
+  //           person2.bmi
+  //         )}) than ${person1.fullName} (${Math.round(person1.bmi)})`
+  //   }`
+  // );
   // console.log(person1.bmi);
+  //----------------------------------------------
+  // const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+  // const tips = [0.15, 0.2];
+  // const totals = [];
+
+  // const calcAvg = (arr) => {
+  //   let avg = 0;
+  //   arr.forEach((el) => {
+  //     avg += el;
+  //   });
+  //   return avg / arr.length;
+  // };
+
+  // // calcAvg(bills);
+
+  // const calcTip = (billArray) => {
+  //   billArray.forEach((el) => {
+  //     if (el >= 50 && el <= 300) {
+  //       totals.push(el * tips[0] + el);
+  //       // console.log(el * tips[0]);
+  //     } else {
+  //       totals.push(el * tips[1] + el);
+  //       // console.log(el * tips[1]);
+  //     }
+  //   });
+  // };
+
+  // calcTip(bills);
+  // console.log(totals);
+  // console.log('avg: ', calcAvg(bills));
+  //----------------------------------------------
+  //----------------------------------------------
+  //----------------------------------------------
+  //----------------------------------------------
+  //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
   return <div>Basics</div>;
