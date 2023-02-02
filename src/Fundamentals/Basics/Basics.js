@@ -256,6 +256,19 @@ export const Basics = () => {
   // console.log(totals);
   // console.log('avg: ', calcAvg(bills));
   //----------------------------------------------
+  const temperatureData = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+  const dataWithNoErrors = [];
+
+  temperatureData.forEach((element) => {
+    typeof element === 'number' && dataWithNoErrors.push(element);
+  });
+
+  const findMinMax = () => {
+    console.log('Max: ', Math.max(...dataWithNoErrors));
+    console.log('Min: ', Math.min(...dataWithNoErrors));
+  };
+
+  findMinMax();
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
