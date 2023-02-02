@@ -256,20 +256,26 @@ export const Basics = () => {
   // console.log(totals);
   // console.log('avg: ', calcAvg(bills));
   //----------------------------------------------
-  const temperatureData = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
-  const dataWithNoErrors = [];
+  // const temperatureData = [3, -2, -6, -1, 'error', 9, 13, 17, 15, 14, 9, 5];
+  // const dataWithNoErrors = [];
 
-  temperatureData.forEach((element) => {
-    typeof element === 'number' && dataWithNoErrors.push(element);
-  });
+  // temperatureData.forEach((element) => {
+  //   typeof element === 'number' && dataWithNoErrors.push(element);
+  // });
 
-  const findMinMax = () => {
-    console.log('Max: ', Math.max(...dataWithNoErrors));
-    console.log('Min: ', Math.min(...dataWithNoErrors));
-  };
+  // const findMinMax = () => {
+  //   console.log('Max: ', Math.max(...dataWithNoErrors));
+  //   console.log('Min: ', Math.min(...dataWithNoErrors));
+  // };
 
-  findMinMax();
+  // findMinMax();
   //----------------------------------------------
+  const data1 = [12, 21, 23];
+  // const data2 = [12, 5, -5, 0, 4];
+
+  data1.forEach((element, index) => {
+    console.log(`Temperature will be ${element}°C in ${index + 1} days.`);
+  });
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
