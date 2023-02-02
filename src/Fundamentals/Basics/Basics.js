@@ -272,10 +272,13 @@ export const Basics = () => {
   //----------------------------------------------
   const data1 = [12, 21, 23];
   // const data2 = [12, 5, -5, 0, 4];
+  let forecast = '';
 
   data1.forEach((element, index) => {
-    console.log(`Temperature will be ${element}°C in ${index + 1} days.`);
+    forecast += `... ${element}°C in ${index + 1} days `;
+    // console.log(`Temperature will be ${element}°C in ${index + 1} days.`);
   });
+  console.log(forecast);
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
