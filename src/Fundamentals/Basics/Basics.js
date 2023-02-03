@@ -270,19 +270,19 @@ export const Basics = () => {
 
   // findMinMax();
   //----------------------------------------------
-  const data1 = [12, 21, 23];
-  // const data2 = [12, 5, -5, 0, 4];
-  let forecast = '';
+  // const data1 = [12, 21, 23];
+  // // const data2 = [12, 5, -5, 0, 4];
+  // let forecast = '';
 
-  data1.forEach((element, index) => {
-    forecast += `... ${element}°C in ${index + 1} days `;
-    // console.log(`Temperature will be ${element}°C in ${index + 1} days.`);
-  });
-  console.log(forecast);
+  // data1.forEach((element, index) => {
+  //   forecast += `... ${element}°C in ${index + 1} days `;
+  //   // console.log(`Temperature will be ${element}°C in ${index + 1} days.`);
+  // });
+  // console.log(forecast);
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
   //----------------------------------------------
-  return <div>Basics</div>;
+  return <div></div>;
 };

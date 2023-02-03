@@ -34,5 +34,5 @@ export const Assignments = () => {
   // description = `${country} is in ${continent}, and its ${population} people speak ${language}`;
   // console.log(description);
 
-  return <div>Assignments</div>;
+  return <div></div>;
 };
