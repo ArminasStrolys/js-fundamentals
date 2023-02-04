@@ -5,15 +5,13 @@ import './project1.css';
 export const Project1 = () => {
   const [score, setScore] = useState(20);
   const [highscore, setHighscore] = useState(0);
-  const [userValue, setUserValue] = useState(null);
+  const [userValue, setUserValue] = useState(0);
   const [victory, setVictory] = useState(false);
   const [message, setMessage] = useState('Start guessing...');
 
   const [randomNum, setRandomNum] = useState(
-    Math.floor(Math.random() * 10 + 1)
+    Math.floor(Math.random() * 20 + 1)
   );
-
-  console.log(randomNum);
 
   const handleValueCheck = () => {
     console.log(userValue);
@@ -22,9 +20,16 @@ export const Project1 = () => {
 
   const handleReset = () => {
     setScore(20);
-    setRandomNum(Math.floor(Math.random() * 10 + 1));
+    setRandomNum(Math.floor(Math.random() * 20 + 1));
     setVictory(false);
+    setMessage('Start guessing...');
   };
+
+  if (score === 0) {
+    setMessage('You lost!');
+    alert('Game lost :(');
+    handleReset();
+  }
 
   const handleGuessCheck = () => {
     if (userValue === randomNum) {
@@ -42,12 +47,9 @@ export const Project1 = () => {
 
   return (
     <>
-      <header>
+      <header className={!victory ? 'header' : 'header--win'}>
         <h1>Guess My Number!</h1>
-        <p className="between">(Between 1 and {score})</p>
-        <button onClick={handleReset} className="btn again">
-          Again!
-        </button>
+        <p className="between">(Between 1 and 20)</p>
         <div className="number">{victory ? randomNum : '?'}</div>
       </header>
       <main className="main-theme">
@@ -55,11 +57,18 @@ export const Project1 = () => {
           <input
             type="number"
             className="guess"
+            value={userValue}
             onChange={(e) => setUserValue(+e.target.value)}
           />
-          <button className="btn check" onClick={handleValueCheck}>
-            Check!
-          </button>
+          {victory ? (
+            <button onClick={handleReset} className="btn again">
+              Again!
+            </button>
+          ) : (
+            <button className="btn check" onClick={handleValueCheck}>
+              Check!
+            </button>
+          )}
         </section>
         <section className="right">
           <p className="message">{message}</p>

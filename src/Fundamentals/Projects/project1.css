@@ -21,11 +21,20 @@ body {
 }
 
 /* LAYOUT */
-header {
+.header {
   position: relative;
   height: 29.6vh;
   border-bottom: 7px solid #eee;
   background-color: #222;
+  margin-top: 20px;
+
+}
+
+.header--win {
+  position: relative;
+  height: 29.6vh;
+  border-bottom: 7px solid #eee;
+  background-color: rgb(4, 134, 0);
   margin-top: 20px;
 }
 
@@ -78,12 +87,6 @@ h1 {
   position: absolute;
   top: 2rem;
   right: 2rem;
-}
-
-.again {
-  position: absolute;
-  top: 2rem;
-  left: 2rem;
 }
 
 .guess {
