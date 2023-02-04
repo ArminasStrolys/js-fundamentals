@@ -48,7 +48,7 @@ export const Project1 = () => {
   };
 
   return (
-    <>
+    <div className="p1">
       <header className={!victory ? 'header' : 'header--win'}>
         <h1>{!victory ? 'Guess My Number!' : 'Winner!'}</h1>
         <p className="between">(Between 1 and {initialScore})</p>
@@ -82,6 +82,6 @@ export const Project1 = () => {
           </p>
         </section>
       </main>
-    </>
+    </div>
   );
 };
