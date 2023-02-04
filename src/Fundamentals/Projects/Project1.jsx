@@ -3,7 +3,9 @@ import React, { useState } from 'react';
 import './project1.css';
 
 export const Project1 = () => {
-  const [score, setScore] = useState(20);
+  const initialScore = 20;
+
+  const [score, setScore] = useState(initialScore);
   const [highscore, setHighscore] = useState(0);
   const [userValue, setUserValue] = useState(0);
   const [victory, setVictory] = useState(false);
@@ -48,8 +50,8 @@ export const Project1 = () => {
   return (
     <>
       <header className={!victory ? 'header' : 'header--win'}>
-        <h1>Guess My Number!</h1>
-        <p className="between">(Between 1 and 20)</p>
+        <h1>{!victory ? 'Guess My Number!' : 'Winner!'}</h1>
+        <p className="between">(Between 1 and {initialScore})</p>
         <div className="number">{victory ? randomNum : '?'}</div>
       </header>
       <main className="main-theme">
