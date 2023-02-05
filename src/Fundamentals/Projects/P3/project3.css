@@ -32,6 +32,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #fff;
   transition: all 0.75s;
 }
 
@@ -49,7 +50,7 @@ main {
 .score {
   font-size: 8rem;
   font-weight: 300;
-  color: #c7365f;
+  color: #ffffff;
   margin-bottom: auto;
 }
 
@@ -126,11 +127,11 @@ main {
 }
 
 .btn--roll {
-  top: 39.3rem;
+  bottom: 19.3rem;
 }
 
 .btn--hold {
-  top: 46.1rem;
+  bottom: 26.1rem;
 }
 
 .btn:active {
